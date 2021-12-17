@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="logo">
+                <img src="../../assets/logo.png" alt="logo">
+            </div>
+            
+        </div>
+        <div class="col-md-7">
+            <div class="title">
+                <h2>Publicaciones</h2>
+            </div>
+            <div class="publicaciones">
+                <div class="publicacion" *ngFor="let pub of publicaciones">
+                    <h6>{{pub.nickname}} post in {{pub.createdAt}}</h6>
+                    <p>{{pub.text}}</p>
+                </div>               
+            </div>
+            <div class="publicar">
+                <input type="text" [(ngModel)]=textoPublicacion >
+                <button (click)="crearPublicacion()">Publicar</button>
+            </div>
+            
+        </div>
+        <div class="col-md-2">
+            <button class="cerrarsesion" (click)="cerrarSesion()">Cerrar Sesión</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="logo">
+                <img src="../../assets/logo.png" alt="logo">
+            </div>
+            <div class="col r">
+                <div class="registro">
+                    <div class="title">
+                        <h3>Registro</h3>
+                    </div>
+                    <div class="info">
+                        <div class="nickname">
+                            <img src="../../assets/user-solid.svg" alt="">
+                            <input type="text" [(ngModel)]=nickname name="nickname" id="name" placeholder="Nickname" >
+                        </div>
+                        <div class="correo">
+                            <img src="../../assets/envelope-solid.svg" alt="">
+                            <input type="text" [(ngModel)]=email name="email" id="email" placeholder="Correo">
+                        </div>
+                        <div class="password">
+                            <img src="../../assets/key-solid.svg" alt="">
+                            <input type="password" [(ngModel)]=password name="password" id="password" placeholder="Contraseña">
+                        </div>
+                        <div class="boton">
+                            <button (click)="onClickRegistrarse()">Registrarse</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

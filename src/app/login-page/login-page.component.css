@@ -1,0 +1,79 @@
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+.logo>img{
+    border-radius: 80px;
+    width:220px;
+}
+.r{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.registro{
+    background: #0B0A0A;
+    width:360px;
+    border-radius: 70px;
+}
+.registro>.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.title>h3{
+    color:white;
+    margin: 20px;
+}
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:30px;
+}
+.nickname,.correo,.password{
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    border-radius: 15px;
+    padding: 10px;
+}
+input{
+    border:none;
+}
+input:focus{
+    outline: none;
+}
+.registro>.info>.nickname>img{
+    width:30px;
+    padding-right:5px
+}
+.registro>.info>.correo>img{
+    width:30px;
+    padding-right:5px
+}
+.registro>.info>.password>img{
+    width:30px;
+    padding-right:5px
+}
+.boton>button{
+    background: #D98787;
+    color: white;
+    border:none;
+    width: fit-content;
+    padding:0px 40px;
+    font-size: 25px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+.enlace{
+    margin-bottom: 20px;
+}
+.enlace>a{
+    color: white;
+}

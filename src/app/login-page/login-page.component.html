@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="logo">
+                <img src="../../assets/logo.png" alt="logo">
+            </div>
+            <div class="col r">
+                <div class="registro">
+                    <div class="title">
+                        <h3>Inicio de Sesion</h3>
+                    </div>
+                    <div class="info">
+                        <div class="correo">
+                            <img src="../../assets/envelope-solid.svg" alt="">
+                            <input type="text" [(ngModel)]=email name="email" placeholder="email">
+                        </div>
+                        <div class="password">
+                            <img src="../../assets/key-solid.svg" alt="">
+                            <input type="password" [(ngModel)]=password name="password" placeholder="Contraseña">
+                        </div>
+                        <div class="boton">
+                            <button (click)="onClickLogin()">Entrar</button>
+                        </div>
+                        <div class="enlace">
+                            <a routerLink="/register">¿No tienes cuenta? Regístrate</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
